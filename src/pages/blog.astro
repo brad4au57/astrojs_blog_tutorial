@@ -1,31 +1,32 @@
 ---
-import astroLogo from '../assets/astro.svg';
+import Layout from '../layouts/Layout.astro';
 import background from '../assets/background.svg';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<div id='container'>
-  <nav>
-    <a href='/'>Home</a>
-    <a href='/about/'>About</a>
-    <a href='/blog/'>Blog</a>
-  </nav>
+<Layout>
+  <div id='container'>
+    <nav>
+      <a href='/'>Home</a>
+      <a href='/about/'>About</a>
+      <a href='/blog/'>Blog</a>
+    </nav>
 
-  <img id='background' src={background.src} alt='' fetchpriority='high' />
-  <main>
-    <section id='hero'>
-      <a href='https://astro.build'
-        ><img
-          src={astroLogo.src}
-          width='115'
-          height='48'
-          alt='Astro Homepage'
-        /></a
-      >
-      <h1>Blog coming soon...</h1>
-      <p>We're learning how to create a new blog using Astro.</p>
-    </section>
-  </main>
-</div>
+    <img id='background' src={background.src} alt='' fetchpriority='high' />
+    <main>
+      <section id='hero'>
+        <h1>My Astro Learning Blog</h1>
+        <h2>Coming soon...</h2>
+        <p>
+          Currently, I am working through a tutorial project so I can learn how
+          to use Astro to build content driven websites.
+        </p>
+      </section>
+    </main>
+  </div>
+</Layout>
 
 <style>
   #background {
