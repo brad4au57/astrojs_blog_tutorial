@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import background from '../assets/background.svg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = 'Watercolor Learning Blog';
 ---
 
 <Layout>
@@ -17,12 +16,24 @@ import background from '../assets/background.svg';
     <img id='background' src={background.src} alt='' fetchpriority='high' />
     <main>
       <section id='hero'>
-        <h1>My Astro Learning Blog</h1>
-        <h2>Coming soon...</h2>
-        <p>
-          Currently, I am working through a tutorial project so I can learn how
-          to use Astro to build content driven websites.
-        </p>
+        <h1>{pageTitle}</h1>
+        <ul>
+          <li>
+            <a href='/posts/beauty-of-transparency-in-watercolor/'
+              >The Beauty of Transparency in Watercolor</a
+            >
+          </li>
+          <li>
+            <a href='/posts/capturing-natures-essence-with-watercolor/'
+              >Capturing Nature’s Essence with Watercolor</a
+            >
+          </li>
+          <li>
+            <a href='/posts/delicate-art-of-watercolor-still-life/'
+              >The Delicate Art of Watercolor Still Life</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
   </div>
