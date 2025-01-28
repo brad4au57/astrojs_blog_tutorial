@@ -1,17 +1,14 @@
 ---
-title: 'Capturing Nature’s Essence with Watercolor'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Capturing Nature's Essence with Watercolor"
 pubDate: 2025-01-21
 description: 'Explore the rugged honesty of watercolor painting in the great outdoors.'
 author: 'Winslow Homer'
 image:
-  url: 'https://upload.wikimedia.org/wikipedia/commons/3/30/Winslow_Homer_-_The_Boys_in_a_Pasture.jpg'
+  url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Winslow_Homer_-_Boys_in_a_PastureFXD.jpg/800px-Winslow_Homer_-_Boys_in_a_PastureFXD.jpg?20240908195430'
   alt: 'A watercolor painting by Winslow Homer.'
 tags: ['watercolor', 'landscape painting', 'nature', 'Winslow Homer']
 ---
-
-# Capturing Nature’s Essence with Watercolor
-
-**By: Winslow Homer**
 
 When I turned to watercolor, I found a medium that echoed the rawness and immediacy of nature. There’s a rugged honesty to watercolor painting—it demands precision and decisiveness, yet offers freedom to express the ever-changing landscape.
 

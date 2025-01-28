@@ -1,41 +1,26 @@
 ---
 import '../styles/global.css';
-
-import background from '../assets/background.svg';
-import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
 
 const pageTitle = 'Watercolor Learning Blog';
 ---
 
-<body>
-  <div id='container'>
-    <Header />
-
-    <img id='background' src={background.src} alt='' fetchpriority='high' />
-    <main>
-      <section id='hero'>
-        <h1>{pageTitle}</h1>
-        <ul>
-          <li>
-            <a href='/posts/beauty-of-transparency-in-watercolor/'
-              >The Beauty of Transparency in Watercolor</a
-            >
-          </li>
-          <li>
-            <a href='/posts/capturing-natures-essence-with-watercolor/'
-              >Capturing Nature’s Essence with Watercolor</a
-            >
-          </li>
-          <li>
-            <a href='/posts/delicate-art-of-watercolor-still-life/'
-              >The Delicate Art of Watercolor Still Life</a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-  </div>
-  <script>
-    import '../scripts/menu.ts';
-  </script>
-</body>
+<Layout pageTitle={pageTitle}>
+  <ul>
+    <li class='post-list-item'>
+      <a href='/posts/beauty-of-transparency-in-watercolor/'
+        >The Beauty of Transparency in Watercolor</a
+      >
+    </li>
+    <li class='post-list-item'>
+      <a href='/posts/capturing-natures-essence-with-watercolor/'
+        >Capturing Nature’s Essence with Watercolor</a
+      >
+    </li>
+    <li class='post-list-item'>
+      <a href='/posts/delicate-art-of-watercolor-still-life/'
+        >The Delicate Art of Watercolor Still Life</a
+      >
+    </li>
+  </ul>
+</Layout>

@@ -1,17 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'The Beauty of Transparency in Watercolor'
 pubDate: 2025-01-21
 description: 'Discover the magic of light and transparency in watercolor painting.'
 author: 'J.M.W. Turner'
 image:
-  url: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Joseph_Mallord_William_Turner_-_The_Fighting_Temeraire.jpg'
+  url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/800px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg?20141205013827'
   alt: 'A watercolor painting by J.M.W. Turner.'
 tags: ['watercolor', 'painting', 'art history', 'J.M.W. Turner']
 ---
-
-# The Beauty of Transparency in Watercolor
-
-**By: J.M.W. Turner**
 
 Watercolor is a medium of ethereal beauty, capable of capturing the interplay of light and shadow with unparalleled transparency. Unlike oils, watercolors allow the paper to become an active participant in the artwork. By letting the light reflect through the paint and off the paper, one can achieve a luminosity that mimics the natural world.
 

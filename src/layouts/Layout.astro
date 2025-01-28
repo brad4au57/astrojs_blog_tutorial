@@ -1,34 +1,37 @@
 ---
 import '../styles/global.css';
+import background from '../assets/background.svg';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const { pageTitle } = Astro.props;
 ---
 
-<!doctype html>
 <html lang='en'>
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width' />
+    <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Blog Tutorial</title>
-    <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-    </style>
+    <title>{pageTitle}</title>
   </head>
+
   <body>
-    <slot />
-    <Footer />
+    <div id='container'>
+      <Header />
+      <img id='background' src={background.src} alt='' fetchpriority='high' />
+
+      <main>
+        <section id='hero'>
+          <h1>{pageTitle}</h1>
+          <slot />
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+    <script>
+      import '../scripts/menu.ts';
+    </script>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>

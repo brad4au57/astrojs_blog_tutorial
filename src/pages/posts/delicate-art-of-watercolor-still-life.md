@@ -1,17 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'The Delicate Art of Watercolor Still Life'
 pubDate: 2025-01-21
 description: 'Discover the intimacy and precision of watercolor still life.'
 author: 'John Singer Sargent'
 image:
-  url: 'https://upload.wikimedia.org/wikipedia/commons/5/55/John_Singer_Sargent_-_Carnation%2C_Lily%2C_Lily%2C_Rose.jpg'
+  url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/John_Singer_Sargent_-_Carnation%2C_Lily%2C_Lily%2C_Rose_-_Google_Art_Project.jpg/531px-John_Singer_Sargent_-_Carnation%2C_Lily%2C_Lily%2C_Rose_-_Google_Art_Project.jpg?20110220012731'
   alt: 'A watercolor painting by John Singer Sargent.'
 tags: ['watercolor', 'still life', 'John Singer Sargent', 'art techniques']
 ---
-
-# The Delicate Art of Watercolor Still Life
-
-**By: John Singer Sargent**
 
 While I’m often known for my portraiture, watercolor still life offers a serene and intimate way to study form, light, and color. The transparency of watercolor allows for subtleties that bring even the most mundane objects to life.
 
