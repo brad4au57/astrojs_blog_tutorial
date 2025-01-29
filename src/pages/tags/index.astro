@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const allTags = Object.values(
+  import.meta.glob('../posts/*.md', { eager: true })
+);
+const tags = [
+  ...new Set(allTags.flatMap((post: any) => post.frontmatter.tags)),
+];
+const pageTitle = 'Tags';
+---
+
+<Layout pageTitle={pageTitle}>
+  <div class='tags'>
+    {
+      tags.map((tag: string) => (
+        <p class='tag'>
+          <a href={`/tags/${tag}`}>#{tag}</a>
+        </p>
+      ))
+    }
+  </div>
+</Layout>
+
+<style>
+  a {
+    font-weight: bold;
+    color: #2d3436;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+  }
+</style>

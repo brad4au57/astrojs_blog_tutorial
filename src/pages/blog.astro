@@ -1,26 +1,21 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
+import BlogPost from '../components/BlogPost.astro';
+
+const allPosts = Object.values(
+  import.meta.glob('./posts/*.md', { eager: true })
+);
 
 const pageTitle = 'Watercolor Learning Blog';
 ---
 
 <Layout pageTitle={pageTitle}>
   <ul>
-    <li class='post-list-item'>
-      <a href='/posts/beauty-of-transparency-in-watercolor/'
-        >The Beauty of Transparency in Watercolor</a
-      >
-    </li>
-    <li class='post-list-item'>
-      <a href='/posts/capturing-natures-essence-with-watercolor/'
-        >Capturing Nature’s Essence with Watercolor</a
-      >
-    </li>
-    <li class='post-list-item'>
-      <a href='/posts/delicate-art-of-watercolor-still-life/'
-        >The Delicate Art of Watercolor Still Life</a
-      >
-    </li>
+    {
+      allPosts.map((post: any) => (
+        <BlogPost url={post.url} title={post.frontmatter.title} />
+      ))
+    }
   </ul>
 </Layout>
