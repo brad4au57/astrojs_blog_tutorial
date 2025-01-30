@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout pageTitle={frontmatter.title}>
-  <img src={frontmatter.image.url} alt={frontmatter.image.alt} width='50%' />
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} width='100%' />
   <p>Written by {frontmatter.author}</p>
   <p><em>{frontmatter.description}</em></p>
 
@@ -40,5 +40,8 @@ const { frontmatter } = Astro.props;
   .tag {
     padding: 0em 0.5em;
     font-size: 1em;
+  }
+  img {
+    margin: 2em 0;
   }
 </style>
