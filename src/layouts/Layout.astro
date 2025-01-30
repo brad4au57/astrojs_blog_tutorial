@@ -23,7 +23,9 @@ const { pageTitle } = Astro.props;
 
       <main>
         <section id='hero'>
-          <h1>{pageTitle}</h1>
+          <h1>
+            {pageTitle}
+          </h1>
           <slot />
         </section>
       </main>
@@ -34,6 +36,15 @@ const { pageTitle } = Astro.props;
       import '../scripts/menu.ts';
     </script>
   </body>
+
+  <style>
+    h1 {
+      /* color: linear-gradient(rgb(108, 92, 231), rgb(212, 4, 4)); */
+      background: -webkit-linear-gradient(top left, #ff7675, #a29bfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 
 
 </html>

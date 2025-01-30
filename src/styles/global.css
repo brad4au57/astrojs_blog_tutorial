@@ -71,10 +71,11 @@ main {
 
 #hero {
   display: flex;
-  align-items: start;
+  align-items: left;
   flex-direction: column;
   justify-content: center;
   padding: 16px;
+  width: 90%;
 }
 
 h1 {

@@ -5,3 +5,12 @@ const { url, title } = Astro.props;
 <li class='post-list-item'>
   <a href={url}>{title}</a>
 </li>
+
+<style>
+  a {
+    &:hover {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+</style>

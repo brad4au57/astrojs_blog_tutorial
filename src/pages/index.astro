@@ -1,8 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const pageTitle = 'Home Page';
+import headerImg from '../assets/header_flowers.png';
+const pageTitle = 'Astro Blog Tutorial Home Page';
 ---
 
 <Layout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+  <img src={headerImg.src} alt='Watercolor Flowers' id='headerImg' />
+  <h2>My awesome little astro blog practice site</h2>
 </Layout>
+
+<style>
+  #headerImg {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+</style>
