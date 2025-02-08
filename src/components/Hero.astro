@@ -1,0 +1,62 @@
+---
+import HeroImages from './HeroImages.astro';
+const { pageTitle } = Astro.props;
+---
+
+<section class='homepage-hero'>
+  <div class='hero-text'>
+    <h1>{pageTitle}</h1>
+    <h2>My awesome little astro blog practice site built with Astro JS</h2>
+  </div>
+  <HeroImages />
+</section>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .homepage-hero {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: #4a90e2;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 40%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 1024px) {
+    .hero {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 5%;
+      height: auto;
+      text-align: center;
+    }
+
+    .hero-text {
+      max-width: 90%;
+    }
+  }
+</style>

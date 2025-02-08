@@ -1,11 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from './Layout.astro';
 
 const { frontmatter } = Astro.props;
 ---
 
 <Layout pageTitle={frontmatter.title}>
-  <img src={frontmatter.image.url} alt={frontmatter.image.alt} width='100%' />
+  <Image src={frontmatter.image.url} alt={frontmatter.image.alt} width={100} />
   <p>Written by {frontmatter.author}</p>
   <p><em>{frontmatter.description}</em></p>
 

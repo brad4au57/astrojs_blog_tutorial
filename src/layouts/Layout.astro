@@ -18,28 +18,24 @@ const { pageTitle } = Astro.props;
 
   <Header />
   <body>
-    <div id='container'>
-      <img id='background' src={background.src} alt='' fetchpriority='high' />
+    <img id='background' src={background.src} alt='' fetchpriority='high' />
+    <main>
+      <section id='hero'>
+        <h1>
+          {pageTitle}
+        </h1>
+        <slot />
+      </section>
+    </main>
 
-      <main>
-        <section id='hero'>
-          <h1>
-            {pageTitle}
-          </h1>
-          <slot />
-        </section>
-      </main>
-
-      <Footer />
-    </div>
-    <script>
-      import '../scripts/menu.ts';
-    </script>
+    <Footer />
   </body>
+  <script>
+    import '../scripts/menu.ts';
+  </script>
 
   <style>
     h1 {
-      /* color: linear-gradient(rgb(108, 92, 231), rgb(212, 4, 4)); */
       background: -webkit-linear-gradient(top left, #ff7675, #a29bfe);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
